@@ -3,5 +3,5 @@ plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.jetbrains.kotlin.android) apply false
     alias(libs.plugins.android.library) apply false
-
+    id("com.zhouz.plugin.ARouterAGP8Plugin") version "1.0.0" apply false
 }

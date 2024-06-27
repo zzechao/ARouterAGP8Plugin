@@ -9,6 +9,7 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        maven("$rootDir/repo")
     }
 }
 dependencyResolutionManagement {

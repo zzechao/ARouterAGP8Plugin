@@ -3,6 +3,10 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
 }
 
+//if (gradle.startParameter.taskRequests.toString().contains("Release")) {
+    apply(plugin = "com.zhouz.plugin.ARouterAGP8Plugin")
+//}
+
 android {
     namespace = "com.zhouz.arouteragp8plugin"
     compileSdk = 34
@@ -47,7 +51,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
